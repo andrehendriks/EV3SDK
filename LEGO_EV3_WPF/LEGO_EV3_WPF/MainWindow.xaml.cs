@@ -33,9 +33,9 @@ namespace LEGO_EV3_WPF
             InitializeComponent();
         }
 
-        private async void async1()
+        private void async1()
         {
-            await brick.ConnectAsync();
+            brick.ConnectAsync();
         }
 
         private void async2()
