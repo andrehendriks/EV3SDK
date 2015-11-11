@@ -33,9 +33,14 @@ namespace LEGO_EV3_WPF
             InitializeComponent();
         }
 
-        private async void async()
+        private async void async1()
         {
             await brick.ConnectAsync();
+        }
+
+        private async void async2()
+        {
+            brick.Disconnect();
         }
 
         private async void BatchCommand()
@@ -109,7 +114,12 @@ namespace LEGO_EV3_WPF
 
         private void button_connect_Click(object sender, RoutedEventArgs e)
         {
-            async();
+            async1();
+        }
+
+        private void button_disconnect_Click(object sender, RoutedEventArgs e)
+        {
+            async2();
         }
     }
 }
