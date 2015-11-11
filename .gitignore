@@ -210,3 +210,10 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
+/LEGO Mindstorms SDK
+/legoev3-master/legoev3-master/Docs
+/legoev3-master/legoev3-master/Lego.Ev3.Android
+/legoev3-master/legoev3-master/SampleApps
+/legoev3-master/legoev3-master/Testers
+*.sln
+/legoev3-master/legoev3-master/Lego.Ev3.Desktop

@@ -23,13 +23,13 @@ namespace LEGO_EV3_WPF
     public partial class MainWindow : Window
     {
         Brick brick = new Brick(new BluetoothCommunication("COM46"));
-
+        
         public MainWindow()
         {
             
            
             brick.Ports[InputPort.Four].SetMode(InfraredMode.Proximity);
-
+            
             InitializeComponent();
         }
 
@@ -38,7 +38,7 @@ namespace LEGO_EV3_WPF
             await brick.ConnectAsync();
         }
 
-        private async void async2()
+        private void async2()
         {
             brick.Disconnect();
         }
